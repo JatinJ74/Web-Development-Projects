@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color:aqua;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.footer-section h4{
+    margin-bottom: 8px ;
+}
+.footer-section{
+    padding: 10px;
+
+}
+.footer-section ul{
+    list-style: none;
+    /* margin: 2px; */
+}
+
+.footer-section ul li{
+    padding: 2px;
+}
+ 
+.footer-section ul li a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer-bottom{
+    text-align: center;
+    background-color: aquamarine;
+}
