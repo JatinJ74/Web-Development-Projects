@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    /* grid-template-rows: max-content; */
+    
+    
+    
+}
+
+.divone{
+    background-color: aqua;
+    height: 100vh;
+}
+
+.divtwo{
+    background-color: blue;
+    height: 100vh;
+}
+
+.divthree{
+    background-color: green;
+    height: 100vh;
+    
+}

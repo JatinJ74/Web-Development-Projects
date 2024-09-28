@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      /* color: #25ca16; */
+      background-color:  #000;
+      gap: 9px;
+      height: 748px;
+      width: 748px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .divone{
+      height: 414px;
+      width: 320px;
+      background-color: #E72F24;
+    }
+
+    .divtwo{
+      height: 414px;
+      width: calc(748px - 329px);
+      background-color: #F0F1EC;
+    }
+
+    .divthree{
+      height: 295px;
+      width: 320px;
+      background-color: #F0F1EC;
+      grid-row-start: 2;
+    }
+
+    .divfour{
+      height: 297px;
+      width: 360px;
+      background-color: #F0F1EC;
+      grid-column-start: 2;
+      grid-row-start: 2;
+      grid-column-end: 3;
+
+    }
+
+    .divfive{
+      height: 130px;
+      width: 50px;
+      background-color: #004592;
+      position: relative;
+      right: 59px;
+      border-bottom: #000;
+      border-bottom-width: 10px;
+      /* grid-row-end:; */
+      /* grid-column-end: 4; */
+    }
+
+    .divsix{
+      height: 155px;
+      width: 50px;
+      background-color: #F0F1EC;
+      grid-column-start: 3;
+      grid-row-start: 2;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
+      <div class="divone"></div>
+      <div class="divtwo"></div>
+      <div class="divthree"></div>
+      <div class="divfour"></div>
+      <div class="divfive"></div>
+      <div class="divsix"></div>
+      <div class="divseven"></div>
+      <div class="diveight"></div>
+      <div class="divnine"></div>
+   </div>
+</body>
+
+</html>

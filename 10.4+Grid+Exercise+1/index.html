@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(2, 100px);
+            grid-template-rows: repeat(2, 100px);
+            gap: 10px; 
+            
+        }
+        .divone{
+            background-color: red;
+        }
+        .divtwo{
+            background-color: blue;
+        }
+        .divthree{
+            background-color: green;
+        }
+        .divfour{
+            background-color: yellow;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="divone"></div>
+        <div class="divtwo"></div>
+        <div class="divthree"></div>
+        <div class="divfour"></div>
+    </div>
+</body>
+</html>
