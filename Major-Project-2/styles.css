@@ -2,8 +2,8 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* margin: 2rem; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
 }
 
 .ahref{
@@ -86,20 +86,11 @@ li:hover{
     display: none;
 }
 
-/* #menuList{
-    height: 0px;
-} */
-
-/* hero-section */
-
 .hero-section{
-    /* width: 100%; */
     height: fit-content;
     padding-top: 3rem;
-    /* padding: 2rem; */
     background-color: white;
     text-wrap: stable;
-    /* margin-top: 2rem; */
 }
 
 .hero-grid{
@@ -158,6 +149,10 @@ li:hover{
     width: 100%;
 }
 
+.asset-info > .item h1, p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 /* Section one */
 
 .section-one{
@@ -166,7 +161,6 @@ li:hover{
     height: fit-content;
     text-align: left;
     width: fit-content;
-    /* padding: 2rem; */
 }
 
 .program-card{
@@ -203,7 +197,6 @@ li:hover{
 /* article */
 
 article{
-    /* margin: 2rem 2rem; */
     padding: 0px;
 }
 
@@ -226,7 +219,6 @@ article{
 
 .article-card-one{
     place-self: center;
-    /* padding: 0px 1rem; */
     padding: 0px;
     height: fit-content;
 }
@@ -288,9 +280,6 @@ article{
 /* section - review */
 
 .section-two{
-    
-    /* padding: 2rem; */
-    /* margin: 2rem 2rem; */
     height: fit-content;
     color: white;
     width: fit-content;
@@ -300,7 +289,6 @@ article{
     background-color: rgb(46, 45, 45);
     display: grid;
     grid-template-columns: 2fr 1fr;
-
 }
 
 .reviewer div{
@@ -365,7 +353,6 @@ article{
     height: fit-content;
     outline: gainsboro 1px solid;
     padding: 15px;
-    /* width: fit-content; */
 }
 .item-image{
     height: 50%;
@@ -538,14 +525,12 @@ li>.footer-title:hover{
         display: flex;
         flex-direction: column;
         height: fit-content;
-        /* justify-content: center; */
         align-items: center;
     }
 
     .ct-img{
         height: 40vw;
         width: 60vw;
-        /* place-self: center; */
     }
 
     .footer-right-body{
@@ -576,8 +561,6 @@ li>.footer-title:hover{
         right: 0px;
         background-color: black;
         place-self: center;
-        /* visibility: hidden; */
-        /* overflow: hidden; */
     }
 
     .cta{
@@ -587,7 +570,6 @@ li>.footer-title:hover{
     }
 
     .nav li {
-        /* padding: 1rem; */
         margin: 1rem 0px;
     }
 
@@ -717,9 +699,6 @@ li>.footer-title:hover{
         right: 0px;
         background-color: black;
         place-self: center;
-        /* transition: all 03s; */
-        /* visibility: hidden; */
-        /* overflow: hidden; */
     }
 
     .cta{
@@ -729,7 +708,6 @@ li>.footer-title:hover{
     }
 
     .nav li {
-        /* padding: 1rem; */
         margin: 1rem 0px;
     }
 
@@ -742,18 +720,14 @@ li>.footer-title:hover{
         display: flex;
         flex-direction: column;
         width: 100%;
-        /* gap: 1rem; */
     
         outline: black 1px solid;
         background-color: white;
-        /* margin: 0px 1.5rem; */
         padding: 10px;
     
         place-self: center;
         position: relative;
         top: 0px;
-        /* bottom: 10rem; */
-        /* z-index: 1; */
     }
 
     .mastercard{
