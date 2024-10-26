@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .main {
+        display: block;
+        width: 80%;
+        height: fit-content;
+       
+      }
+
+      .image {
+        height: 12rem;
+        width: 18rem;
+        border-radius: 5%;
+        grid-column: 3;
+        
+        /* position: relative;
+        left: 50%; */
+        
+      }
+
+      .btnOne img {
+        height: auto;
+        width: 15px;
+        float: left;
+        margin-top: 4px;
+        /* padding: 5px; */
+      }
+
+      .btnOne,
+      .btnTwo {
+        padding: 3px;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        margin-top: 15px;
+      }
+
+      .btnOne p {
+        width: 150px;
+        margin-top: 3px;
+      }
+
+      .btnTwo {
+        padding: 4px;
+      }
+
+      .btn {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .subSection1{
+        display: grid;
+        grid-template-columns: 15% 62%;
+        gap: 10px;
+        padding: 30px;
+        background-color: lightblue;
+
+
+      }
+
+      .subsubsection{
+        grid-column: 2;
+        width: 90%;
+        padding: 2px;
+      }
+
+      .subsubsection h3{
+        margin-top: 6px;
+        margin-bottom: 6px;
+      }
+
+      
+.section-three{
+    margin: 2rem;
+    /* font-size: clamp(10px,1.2rem,2rem); */
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* width: 100%; */
+    /* flex-wrap: wrap; */
+    padding: 0px;
+    gap: 20px;
+    
+}
+
+
+.card-img{
+    /* height: 10%; */
+    /* height: auto; */
+    width: 100px;
+    padding: 0px;
+    place-self: center;
+}
+
+.card-image{
+    /* height:min-content; */
+    height: auto;
+    width: 100px;
+    padding: 0px;
+    place-self: center;
+    margin-bottom: 0.5rem;
+}
+
+.card-one,.card-two, .card-three, .card-four{
+    /* width: 100%; */
+    /* height: fit-content; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* outline: yellow 1px solid; */
+    
+
+}
+
+.cards p, b{
+    padding: 0px;
+    width: fit-content;
+}
+.card-description{
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* #float-right{
+    float: right;
+} */
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="subSection1">
+        <div class="subsubsection">
+          <p>Book Now</p>
+          <div>
+            <h3>Reserver Your Appointment: <br>
+            No-Cost Consultation</h3>
+          </div>
+          <p>
+            Book your appointment today and receive a free consultation with our
+            skilled medical staff. Experience customized attention and excellent
+            service in a relaxing and welcoming setting.
+          </p>
+          <div class="btn">
+            <div>
+              <button class="btnOne">
+                <img src="./Assets/phone-call.png" alt="phone-call" />
+                <p>Book Consultation</p>
+              </button>
+            </div>
+            <div>
+              <button class="btnTwo">
+                <p>Our Doctors</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <img class="image" src="./Assets/doconcall copy.jpeg" alt="doconcall" />
+      </div>
+      <!-- <div class="subSection2"> -->
+      <!-- </div> -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,768 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin: 2rem; */
+}
+
+.ahref{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+li:hover{
+    background-color: rgb(136, 136, 248);
+    transition: all 0.3s;
+    border-radius: 25px;
+    padding: 0.4rem;
+    margin: 0.5rem;
+}
+
+.cta-btn{
+    color: black
+}
+
+.btn{
+    padding: 0.7rem;
+    outline: rgb(136, 136, 248) 1px solid;
+    background-color: transparent;
+    cursor: pointer;
+    border: transparent;
+}
+
+.btn:hover{
+    background-color: rgb(136, 136, 248) ;
+    transition: all 0.3s;
+}
+
+
+.icons{
+    display: inline;
+    height: 1rem;
+    width: fit-content;
+}
+
+.header{
+    height: 3rem;
+    width: 100%;
+    background-color: white;
+    outline: 2px solid gray;
+
+    position: fixed;
+    z-index: 10;
+    
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+    padding: 0px 1rem;
+    visibility: visible;
+    
+}
+
+.nav-list ul{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    visibility: visible;
+}
+
+.nav{
+    display: none;
+}
+.nav-list li{
+    list-style: none;
+}
+
+.menu{
+    display: none;
+}
+
+/* #menuList{
+    height: 0px;
+} */
+
+/* hero-section */
+
+.hero-section{
+    /* width: 100%; */
+    height: fit-content;
+    padding-top: 3rem;
+    /* padding: 2rem; */
+    background-color: white;
+    text-wrap: stable;
+    /* margin-top: 2rem; */
+}
+
+.hero-grid{
+    display: grid;
+    grid-template-rows: 2fr 0.2fr;
+    gap: 1rem;
+    padding: 0px;
+    
+}
+
+.hero-image{
+    height: min-content;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    translate: -50%;
+
+}
+
+.grid-one{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.5rem;
+    padding: 0px;
+    place-items: center;
+}
+
+.hero-info{
+    text-align: left;
+    align-self: center;
+    margin-left: 5em;
+    width: 80%;
+}
+.hero-info h1,p,div{
+    padding: 1.5rem;
+    
+}
+
+.hero-btn{
+    background-color: rgb(136, 136, 248);
+}
+
+.grid-two{
+    align-self: center;
+    height: fit-content;
+    padding: 0px;
+    width: fit-content;
+}
+
+.asset-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(33%,1fr));
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+/* Section one */
+
+.section-one{
+    
+    margin: 2rem 0px;
+    height: fit-content;
+    text-align: left;
+    width: fit-content;
+    /* padding: 2rem; */
+}
+
+.program-card{
+    background-color: rgb(46, 45, 45);
+}
+
+.card-grid p,h2, .article-header p{
+    padding: 0px;
+    margin: 1rem 0px;
+}
+
+.program-card-one{
+    color: white;
+    place-self: start;
+}
+
+.program-card-one > *{
+    margin: 2rem 0px;
+}
+
+#title{
+    color: rgb(136, 136, 248);
+}
+
+.mentor-card{
+    background-color: white;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* article */
+
+article{
+    /* margin: 2rem 2rem; */
+    padding: 0px;
+}
+
+.article-header{
+    padding: 0px;
+    text-align: center;
+}
+.article-image{
+    padding-top: 1.5rem;
+    height: auto;
+    width: 100%;
+}
+
+.article-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0rem;
+    padding: 0px;
+}
+
+.article-card-one{
+    place-self: center;
+    /* padding: 0px 1rem; */
+    padding: 0px;
+    height: fit-content;
+}
+
+
+.card-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    outline: black 1px solid;
+    background-color: white;
+    margin: 0px 1.5rem;
+    padding: 10px;
+
+    place-self: center;
+    position: relative;
+    bottom: 10rem;
+    z-index: 1;
+}
+
+.card-info div{
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+}
+
+.mastercard{
+    display: flex;
+    flex-direction: column;
+    border: black 1px solid;
+    height: max-content;
+    place-self: center;
+    margin: 8px 0px;
+
+}
+
+#image-card-desc-one,#image-card-desc-two{
+    padding: 0px;
+    margin-top: 1rem;
+    place-self: start;
+}
+
+.card-design{
+    background-color: rgb(231, 231, 31);
+    height: 0.8rem;
+    margin: 0.3rem 0px;
+    padding-top: 1rem;   
+}
+
+.card-desc{
+    padding: 1.1rem;
+    outline: black 1px solid;
+    margin: 1rem 0px;
+    place-self: center;
+    width: 100%;
+}
+
+/* section - review */
+
+.section-two{
+    
+    /* padding: 2rem; */
+    /* margin: 2rem 2rem; */
+    height: fit-content;
+    color: white;
+    width: fit-content;
+}
+
+.review{
+    background-color: rgb(46, 45, 45);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+}
+
+.reviewer div{
+    place-self: end;
+    margin-bottom: 2rem;
+}
+.reviewer-info div > p{
+    padding: 0px;
+}
+
+.previous-btn,.next-btn{
+    display: inline;
+    place-self: right;
+    margin: 0.2rem;
+    background-color: white;
+}
+.reviewer-info{
+    padding: 0px;
+    place-self: center;
+}
+
+.reviewer-info div{
+    float: right;
+    padding: 0px;
+    
+}
+
+.reviewer-image{
+    height: auto;
+    width: 3rem;
+    place-self: center;
+    margin-right: 1rem;
+}
+
+/*   */
+.container-title{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    text-wrap: balance;
+}
+
+.container-title > div > p,h2{
+    padding: 0px;
+}
+.container-title div{
+    padding: 0px;
+}
+
+.container-btn{
+    place-self: end ;
+    height: 3rem;
+}
+
+.container-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: fit-content;
+    background-color: aliceblue;
+    gap: 1rem;
+}
+.item{
+    height: fit-content;
+    outline: gainsboro 1px solid;
+    padding: 15px;
+    /* width: fit-content; */
+}
+.item-image{
+    height: 50%;
+    width: 100%;
+}
+
+.item p {
+    padding:0.3rem;
+    font-size: x-small;
+}
+
+.item div{
+    display: flex;
+    width: fit-content;
+    gap: 1rem;
+    padding: 0px;
+}
+
+/* section-five */
+
+.section-five{
+    background-color: lightgrey;
+    width: fit-content;
+}
+
+.sub-section{
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: fit-content;
+}
+
+.content-left > *{
+    padding: 0px;
+}
+
+.ct-img{
+    height: 25vw;
+    width: 40vw;
+}
+
+.sf-five{
+    margin-top: 1rem;
+}
+
+/*  */
+
+.footer{
+    background-color: #f7f8fa;
+    height: fit-content;
+}
+
+.footer hr{
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-body{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+}
+
+.footer-left-body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-right-body{
+    display: flex;
+    
+}
+
+.footer-title{
+    margin-bottom: 1rem;
+}
+
+.footer-list > *{
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    width: max-content;
+}
+li>.footer-title:hover{
+    background-color:white;
+    transition: none;
+    border-radius:none;
+    padding:none;
+    margin:none;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+    .grid-one{
+        grid-template-columns: 1fr;
+    }
+    .hero-info{
+        text-align: left;
+        align-self: center;
+        margin-left: 2rem;
+        padding: 0rem;
+        padding-right: 1rem;
+    }
+    .asset-info{
+        text-align:center;
+        padding: 0px;
+    }
+    .card-grid, .article-content{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+ 
+    #image-card-desc-one,#image-card-desc-two{
+        padding: 0px;
+        margin-top: 1rem;
+        place-self: start;
+    }
+
+  
+    .review{
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+    }
+
+    .review-text{
+        text-align: center;
+    }
+
+    .reviewer div{
+        place-self: center;
+        margin-bottom: 0rem;
+    }
+
+    .article-image{
+        padding-top: 1.5rem;
+        height: auto;
+        width: 97%;
+    }
+
+    .container-card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        height: fit-content;
+        background-color: aliceblue;
+        gap: 1rem;
+    }
+
+    .item p {
+        padding:0.2rem;
+        font-size: small;
+    }
+
+    .container-btn{
+        place-self: end ;
+        height: 3rem;
+        display: flex;
+    }
+
+    .sub-section{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .ct-img{
+        height: 40vw;
+        width: 60vw;
+        /* place-self: center; */
+    }
+
+    .footer-right-body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: inherit;
+        padding: 0px 1rem;
+    }
+    .nav ul{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+        padding: 2rem 0px;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        right: 0px;
+        background-color: black;
+        place-self: center;
+        /* visibility: hidden; */
+        /* overflow: hidden; */
+    }
+
+    .cta{
+        width: fit-content;
+        place-self: center;
+        margin-bottom: 1rem;
+    }
+
+    .nav li {
+        /* padding: 1rem; */
+        margin: 1rem 0px;
+    }
+
+    .menu{
+        display: block;
+        
+    }
+}
+
+@media only screen and ((min-width: 0px) and (max-width: 480px)) {
+    .grid-one{
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image{
+        margin-left: 1.2em;
+    }
+    .hero-info{
+        text-align: left;
+        align-self: center;
+        margin-left: 2em;
+        padding: 0rem;
+    }
+    .asset-info p{
+        text-align:center;
+        padding: 0px;
+    }
+
+    .card-grid, .article-content{
+       display: flex;
+       flex-direction: column;
+       gap: 1rem;
+    }
+
+    #image-card-desc-one,#image-card-desc-two{
+        padding: 0px;
+        margin-top: 1rem;
+        place-self: start;
+    }
+
+    .review{
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+    }
+
+    .review-text{
+        text-align: center;
+    }
+
+    .reviewer div{
+        place-self: center;
+        margin-bottom: 0rem;
+    }
+
+    .article-image{
+        padding-top: 1.5rem;
+        height: auto;
+        width: 100%;
+    }
+
+    .container-card{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        background-color: aliceblue;
+        gap: 1rem;
+    }
+
+    .item p {
+        padding:0.2rem;
+        font-size: xx-small;
+    }
+
+    .container-btn{
+        place-self: end ;
+        height: 3rem;
+        display: flex;
+    }
+
+    .container-title{
+        display: flex;
+        flex-direction: column;
+        text-wrap: balance;
+        gap: 1rem;
+    }
+
+    .sub-section{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+
+    .ct-img{
+        height: 40vw;
+        width: 60vw;
+    }
+
+    .footer-right-body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: inherit;
+        padding: 0px 1rem;
+        
+    }
+    .nav ul{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+        padding: 2rem 0px;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        right: 0px;
+        background-color: black;
+        place-self: center;
+        /* transition: all 03s; */
+        /* visibility: hidden; */
+        /* overflow: hidden; */
+    }
+
+    .cta{
+        width: fit-content;
+        place-self: center;
+        margin-bottom: 1rem;
+    }
+
+    .nav li {
+        /* padding: 1rem; */
+        margin: 1rem 0px;
+    }
+
+    .menu{
+        display: block;
+        
+    }
+
+    .card-info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* gap: 1rem; */
+    
+        outline: black 1px solid;
+        background-color: white;
+        /* margin: 0px 1.5rem; */
+        padding: 10px;
+    
+        place-self: center;
+        position: relative;
+        top: 0px;
+        /* bottom: 10rem; */
+        /* z-index: 1; */
+    }
+
+    .mastercard{
+        display: flex;
+        flex-direction: column;
+        border: black 1px solid;
+        height: max-content;
+        place-self: center;
+        margin: 8px 0px;
+    
+    }
+}
